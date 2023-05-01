@@ -1,0 +1,29 @@
+.nav__list__link {
+  &--icon {
+    width: 24px;
+    height: 24px;
+
+    use {
+      stroke: #9197B3;
+      stroke-linecap: round;
+    }
+
+    &.dashboard, &.customers, &.income {
+      fill: none;
+      stroke-width: 1.5px;
+      stroke: #9197B3;
+    }
+
+    .fill {
+      fill: #9197B3;
+    }
+  }
+
+  &--chevron {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: #9197B3;
+    stroke-linecap: round;
+  }
+}

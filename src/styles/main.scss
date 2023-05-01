@@ -1,13 +1,12 @@
 @import "base/_general.scss";
 @import "base/_fonts.scss";
 @import "helpers/_variables.scss";
+@import "../blocks/modules";
 @import "smart-grid.scss";
 
 .wrapper {
   @include wrapper();
 }
-
-
 
 body {
   font-family: 'Roboto', sans-serif;
