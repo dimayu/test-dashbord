@@ -1,0 +1,18 @@
+.user {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 76px;
+
+  &__img {
+    margin-right: 12px;
+  }
+
+  &__desc {
+    color: #000000;
+
+    &--job {
+      font-size: 12px;
+      color: #757575;
+    }
+  }
+}

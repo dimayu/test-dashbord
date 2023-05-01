@@ -1,0 +1,53 @@
+.list__row {
+  display: flex;
+  margin: 0 44px 0 38px;
+  padding: 20px 0;
+  border-bottom: 1px solid #EEEEEE;
+
+  &__item {
+    &--name {
+      width: 18%;
+    }
+
+    &--company {
+      width: 15%;
+    }
+
+    &--phone {
+      width: 16%;
+    }
+
+    &--email {
+      width: 23%;
+    }
+
+    &--country {
+      width: 16%;
+    }
+
+    &--status {
+      width: 10%;
+      padding: 4px 12px;
+    }
+
+    &--active {
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      background-color: rgba(22, 192, 152, 0.38);
+      border: 1px solid #00B087;
+      color: #008767;
+      text-transform: capitalize;
+    }
+
+    &--inactive {
+      display: flex;
+      justify-content: center;
+      border-radius: 4px;
+      background-color: #FFC5C5;
+      border: 1px solid #DF0404;
+      color: #DF0404;
+      text-transform: capitalize;
+    }
+  }
+}

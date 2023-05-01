@@ -1,5 +1,4 @@
 @import "base/_general.scss";
-@import "base/_fonts.scss";
 @import "helpers/_variables.scss";
 @import "../blocks/modules";
 @import "smart-grid.scss";
@@ -9,27 +8,33 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1;
-  color: $color-black;
-  letter-spacing: -0.02px;
-  background-color: #ffffff;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #292D32;
+  background-color: #FAFBFF;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-
-  &:hover {
-    color: $color-yellow;
-  }
 }
 
 button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.main {
+  display: flex;
+
+  &__right {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 41px 95px 0 71px;
+  }
 }

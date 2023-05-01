@@ -1,7 +1,15 @@
-.nav__list__link {
+.nav__list__li__link {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 11px;
+  color: #9197B3;
+
   &--icon {
     width: 24px;
     height: 24px;
+    margin-right: 11px;
 
     use {
       stroke: #9197B3;
@@ -22,8 +30,35 @@
   &--chevron {
     width: 16px;
     height: 16px;
+    margin-left: auto;
     fill: none;
     stroke: #9197B3;
     stroke-linecap: round;
+  }
+
+  &:hover {
+    background-color: #5932EA;
+    color: #fff;
+
+    .nav__list__li__link--icon {
+      use {
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      &.dashboard, &.customers, &.income {
+        fill: none;
+        stroke-width: 1.5px;
+        stroke: #fff;
+      }
+
+      .fill {
+        fill: #fff;
+      }
+    }
+
+    .nav__list__li__link--chevron {
+      stroke: #fff;
+    }
   }
 }
