@@ -1,0 +1,7 @@
+@import "../../../styles/smart-grid.scss";
+
+.list {
+  @include md-block() {
+    overflow-x: scroll;
+  }
+}

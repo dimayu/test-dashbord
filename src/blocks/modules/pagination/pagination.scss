@@ -1,3 +1,5 @@
+@import "../../../styles/smart-grid.scss";
+
 .pagination {
   display: flex;
 
@@ -12,6 +14,10 @@
     border-radius: 4px;
     margin-left: 12px;
 
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+
     a {
       color: #404B52;
     }
@@ -24,5 +30,14 @@
         color: #fff;
       }
     }
+
+    @include sm-block() {
+      margin-left: 6px;
+    }
+  }
+
+  &__middle {
+    background-color: transparent;
+    border-color: transparent;
   }
 }

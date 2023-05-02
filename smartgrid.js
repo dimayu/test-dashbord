@@ -19,7 +19,7 @@ let settings = {
             fields: '25px'
         },
         sm: {
-            width: '780px',
+            width: '540px',
             fields: '15px'
         },
         xxs: {

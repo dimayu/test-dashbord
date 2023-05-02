@@ -1,3 +1,5 @@
+@import "../../../styles/smart-grid.scss";
+
 .content__header {
   display: flex;
   justify-content: space-between;
@@ -15,6 +17,19 @@
     &--subtitle {
       margin-top: 7px;
       color: #16C098;
+    }
+  }
+
+  @include md-block() {
+    padding: 0 20px;
+  }
+
+  @include sm-block() {
+    flex-direction: column;
+    text-align: center;
+
+    &__text {
+      margin-bottom: 20px;
     }
   }
 }

@@ -1,5 +1,4 @@
 @import "base/_general.scss";
-@import "helpers/_variables.scss";
 @import "../blocks/modules";
 @import "smart-grid.scss";
 
@@ -36,5 +35,74 @@ button {
     width: 100%;
     box-sizing: border-box;
     padding: 41px 95px 0 71px;
+
+    @include lm-block() {
+      padding: 20px;
+    }
+  }
+}
+
+.burger {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: 20px;
+  z-index: 101;
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  @include lm-block() {
+    display: block;
+  }
+
+  &__lines {
+    background-color: #5932EA;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -15px;
+    transition: height 100ms;
+
+    &::after,
+    &::before {
+      content: '';
+      background-color: #5932EA;
+      border-radius: 1px;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+      transition: all 200ms;
+    }
+
+    &::after {
+      top: -7px;
+    }
+
+    &::before {
+      bottom: -7px;
+    }
+  }
+
+  &.active .burger__lines {
+    height: 0;
+
+    &::after,
+    &::before {
+      top: 1px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
   }
 }
