@@ -1,5 +1,9 @@
 # Test
 
+## Демо [https://hi-inet.ru/dist/index.html](https://hi-inet.ru/dist/index.html)
+
+## Ссылка на макет [https://www.figma.com/file/3eMn6QLnByVeaMxh0e2w3i/CRM-Dashboard-Customers-(Copy)?node-id=0-1&t=oa1BsHNWZlaNWUK3-0](https://www.figma.com/file/3eMn6QLnByVeaMxh0e2w3i/CRM-Dashboard-Customers-(Copy)?node-id=0-1&t=oa1BsHNWZlaNWUK3-0)
+
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
 * используется БЭМ-структура
